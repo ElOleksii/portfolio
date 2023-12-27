@@ -2,11 +2,13 @@ function App() {
   return (
     <>
       <div className="homepage">
-        <nav className="navbar">
-          <a href="">About</a>
-          <a href="">Projects</a>
-          <a href=""></a>
-        </nav>
+        <div className="fullscreen">
+          <div className="homepage__container">
+            <p>Oleksii Telecnhak</p>
+            <h1>Front End Developer</h1>
+            <p>Click for more</p>
+          </div>
+        </div>
       </div>
     </>
   );
