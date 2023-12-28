@@ -10,14 +10,16 @@ export default function FullScreenHeader() {
         <motion.div
           initial="hidden"
           animate="visible"
-          className=" pl-24 w-[550px]   min-h-screen text-white  "
+          className=" pl-24 w-[550px] min-h-screen text-white  "
         >
           <motion.div
             variants={slideInFromTop}
-            className="flex flex-col min-h-[100vh] justify-center text-2xl z-10  relative"
+            className="flex flex-col min-h-[100vh] justify-center z-[100]  sm:text-1xl md:text-3xl z-10  relative"
           >
             <p className="mt-14">Oleksii Telecnhak</p>
-            <h1 className="font-medium text-5xl my-10">Front End Developer</h1>
+            <h1 className="font-medium xl:text-5xl my-10">
+              Front End Developer
+            </h1>
             <div>
               <p>Click for more</p>
               <div className="mx-auto mt-5 inline-block">
@@ -29,6 +31,7 @@ export default function FullScreenHeader() {
           </motion.div>
 
           <StarsCanvas className=" z-[-100]" />
+
           <BlackHoleAnimation />
         </motion.div>
       </div>
