@@ -20,9 +20,9 @@ export default function FullScreenHeader() {
         >
           <motion.div
             variants={slideInFromTop}
-            className="flex flex-col min-h-[100vh] justify-center s z-[100]  sm:text-1xl md:text-3xl z-10  relative"
+            className="flex flex-col min-h-[100vh] justify-center z-[100]  sm:text-1xl text-3xl z-10  relative"
           >
-            <p className="mt-14">Oleksii Telecnhak</p>
+            <p className="mt-14">I am Oleksii Telenchak</p>
             <h1 className="font-medium xl:text-5xl my-10">
               Front End Developer
             </h1>

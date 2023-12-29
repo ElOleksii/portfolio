@@ -1,12 +1,12 @@
 const Navbar = () => {
   return (
-    <navbar className="w-full h-[65px] fixed top-0 shadow-lg  backdrop-blur-md z-[105] px-10">
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
+    <navbar className="w-full h-[65px] fixed top-0 shadow-lg  backdrop-blur-md z-[105]  px-10">
+      <div className="w-full h-full flex flex-row items-center justify-between z-[105] m-auto px-[10px]">
         <a
           href="#about-me"
-          className="h-auto w-auto cursor-pointer flex flex-row items-center"
+          className="h-auto  w-auto cursor-pointer flex flex-row items-center"
         >
-          <span className=" ml-[10px] hidden md:block">Telenchak Oleksii</span>
+          <span className=" ml-[10px]  md:block">Telenchak Oleksii</span>
         </a>
 
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
