@@ -43,7 +43,7 @@ export default function FullScreenHeader() {
 
           <BlackHoleAnimation />
         </motion.div>
-        <div className="w-full h-[65px] relative bottom-[35px] shadow-lg  backdrop-blur-md z-[105] px-10"></div>
+        <div className="w-full h-[65px] z-[101] relative bottom-[35px] shadow-lg  backdrop-blur-md z-[105] px-10"></div>
       </div>
     </>
   );
