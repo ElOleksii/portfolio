@@ -1,12 +1,12 @@
-import BlackHoleAnimation from "./BlackHoleAnimation";
-import StarsCanvas from "./StarBackground";
+import BlackHoleAnimation from "./BlackHoleAnimation.jsx";
+import StarsCanvas from "./StarBackground.jsx";
 import { FaArrowDown } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { slideInFromTop } from "../utils/motion";
+import { scrollButton, slideInFromTop } from "../utils/motion.js";
 export default function FullScreenHeader() {
   function scroll() {
     window.scrollBy({
-      top: window.innerHeight,
+      top: window.innerHeight - 30,
       behavior: "smooth",
     });
   }
@@ -22,24 +22,25 @@ export default function FullScreenHeader() {
             variants={slideInFromTop}
             className="flex flex-col min-h-[100vh] 2md:text-center 2md:top-[230px] justify-center z-[100]   text-3xl z-10  relative md:text-xl"
           >
-            <p className="mt-14 md:text-2xl">I am Oleksii Telenchak</p>
-            <h1 className="font-medium text-[3rem] md:text-3xl my-10">
+            <p className="mt-14 md:text-2xl ">I am Oleksii Telenchak</p>
+            <h1 className="font-medium md:my-2 text-[3rem] md:text-3xl my-10">
               Front End Developer
             </h1>
             <div>
-              <p>Click for more</p>
-              <div className="mx-auto mt-5 inline-block">
-                <button
+              <p className="md:hidden">Click for more</p>
+              <div className="mx-auto  inline-block">
+                <motion.button
+                  animate={scrollButton}
                   onClick={scroll}
-                  className="cursor-pointer mx-12  flex items-center justify-center w-12 h-12 border-2 border-white rounded-full transition-all hover:scale-110 hover:opacity-80"
+                  className="cursor-pointer mx-12   flex items-center justify-center w-12 h-12 border-2 border-white rounded-full transition-all hover:scale-110 hover:opacity-80"
                 >
                   <FaArrowDown />
-                </button>
+                </motion.button>
               </div>
             </div>
           </motion.div>
 
-          <StarsCanvas className=" z-[-100]" />
+          <StarsCanvas className="z-[-100]" />
 
           <BlackHoleAnimation />
         </motion.div>

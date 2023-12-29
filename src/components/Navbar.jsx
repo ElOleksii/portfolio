@@ -4,7 +4,7 @@ const Navbar = () => {
       <div className="w-full h-full flex text-lg 2md:text-base flex-row items-center justify-between z-[105] m-auto px-[10px]">
         <a
           href="#fullscreen"
-          className="h-auto  w-auto cursor-pointer flex flex-row items-center"
+          className="h-auto hover:scale-110  duration-150  w-auto cursor-pointer flex flex-row items-center"
         >
           <span className=" ml-[10px]  md:block">Telenchak Oleksii</span>
         </a>

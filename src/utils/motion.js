@@ -37,3 +37,12 @@ export const slideInFromTop = {
     },
   },
 };
+
+export const scrollButton = {
+  opacity: 1,
+  y: 50,
+  transition: {
+    duration: 1,
+    repeat: Infinity,
+  },
+};

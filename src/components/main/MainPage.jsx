@@ -1,6 +1,8 @@
-import FullScreenHeader from "../FullScreenHeader";
-import Navbar from "../Navbar";
+import FullScreenHeader from "../FullScreenHeader.jsx";
+import Navbar from "../Navbar.jsx";
 import AboutMe from "../sub/AboutMe";
+import Projects from "../sub/Projects.jsx";
+import Skills from "../sub/Skills.jsx";
 
 export default function MainPage() {
   return (
@@ -8,7 +10,8 @@ export default function MainPage() {
       <Navbar />
       <FullScreenHeader />
       <AboutMe />
-      <div className="h-[100vh]"></div>
+      <Skills />
+      <Projects />
     </>
   );
 }
