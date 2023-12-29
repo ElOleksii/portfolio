@@ -12,18 +12,18 @@ export default function FullScreenHeader() {
   }
   return (
     <>
-      <div className="container bg-black  min-w-full">
+      <div id="fullscreen" className="container bg-black  min-w-full">
         <motion.div
           initial="hidden"
           animate="visible"
-          className=" pl-24 w-[550px] min-h-screen text-white  "
+          className=" px-12  2md:mx-auto  min-h-screen text-white  "
         >
           <motion.div
             variants={slideInFromTop}
-            className="flex flex-col min-h-[100vh] justify-center z-[100]  sm:text-1xl text-3xl z-10  relative"
+            className="flex flex-col min-h-[100vh] 2md:text-center 2md:top-[230px] justify-center z-[100]   text-3xl z-10  relative md:text-xl"
           >
-            <p className="mt-14">I am Oleksii Telenchak</p>
-            <h1 className="font-medium text-[44px] my-10">
+            <p className="mt-14 md:text-2xl">I am Oleksii Telenchak</p>
+            <h1 className="font-medium text-[3rem] md:text-3xl my-10">
               Front End Developer
             </h1>
             <div>

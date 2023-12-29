@@ -1,9 +1,9 @@
 const Navbar = () => {
   return (
-    <navbar className="w-full h-[65px] fixed top-0 shadow-lg  backdrop-blur-md z-[110]  px-10">
+    <navbar className="w-full md:hidden h-[65px] fixed top-0 shadow-lg  backdrop-blur-md z-[110]  px-10">
       <div className="w-full h-full flex flex-row items-center justify-between z-[105] m-auto px-[10px]">
         <a
-          href="#about-me"
+          href="#fullscreen"
           className="h-auto  w-auto cursor-pointer flex flex-row items-center"
         >
           <span className=" ml-[10px]  md:block">Telenchak Oleksii</span>
