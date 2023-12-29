@@ -12,7 +12,7 @@ export default function FullScreenHeader() {
   }
   return (
     <>
-      <div id="fullscreen" className="container bg-black  min-w-full">
+      <section id="fullscreen" className="container bg-black  min-w-full">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -44,7 +44,7 @@ export default function FullScreenHeader() {
           <BlackHoleAnimation />
         </motion.div>
         <div className="w-full h-[65px] z-[101] relative bottom-[35px] shadow-lg  backdrop-blur-md z-[105] px-10"></div>
-      </div>
+      </section>
     </>
   );
 }
