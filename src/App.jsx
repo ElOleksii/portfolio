@@ -1,6 +1,6 @@
-import FullScreenHeader from "./components/FullScreenHeader";
+import MainPage from "./components/main/MainPage";
 function App() {
-  return <FullScreenHeader />;
+  return <MainPage />;
 }
 
 export default App;

@@ -6,6 +6,7 @@ export default function MainPage() {
     <>
       <Navbar />
       <FullScreenHeader />
+      <div className="h-[100vh]"></div>
     </>
   );
 }
