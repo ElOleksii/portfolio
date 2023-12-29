@@ -4,6 +4,12 @@ import { FaArrowDown } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "../utils/motion";
 export default function FullScreenHeader() {
+  function scroll() {
+    window.scrollBy({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  }
   return (
     <>
       <div className="container bg-black  min-w-full">
@@ -23,7 +29,10 @@ export default function FullScreenHeader() {
             <div>
               <p>Click for more</p>
               <div className="mx-auto mt-5 inline-block">
-                <button className="cursor-pointer mx-12  flex items-center justify-center w-12 h-12 border-2 border-white rounded-full transition-all hover:scale-110 hover:opacity-80">
+                <button
+                  onClick={scroll}
+                  className="cursor-pointer mx-12  flex items-center justify-center w-12 h-12 border-2 border-white rounded-full transition-all hover:scale-110 hover:opacity-80"
+                >
                   <FaArrowDown />
                 </button>
               </div>
