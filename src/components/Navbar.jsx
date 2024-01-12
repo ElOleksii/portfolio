@@ -4,8 +4,20 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <nav className="w-full md:hidden h-[65px] fixed top-0 shadow-lg  backdrop-blur-md z-[110]  px-10">
-        <div className="fixed top-0  right-0 h-screen w-[250px] flex flex-col items-start  justify-start  text-gray-200">
+      <nav className="w-full  h-[65px] fixed top-0 shadow-lg  backdrop-blur-md z-[110]  px-10">
+        <div
+          style={{ display: isOpen ? "flex" : "none" }}
+          className="fixed text-xl sm:text-md top-0 bg-black bg-opacity-95 right-0 h-screen w-full backdrop-blur-[10px] flex flex-col items-center  justify-start  text-gray-200"
+        >
+          <div className="flex mb-[15px] bg-[#3b1c87]  px-[10px] justify-between w-full items-center">
+            <p className="text-xl">Oleksii Telenchak</p>
+            <IoMdClose
+              size={35}
+              onClick={() => setIsOpen((prev) => !prev)}
+              className="cursor-pointer"
+            />
+          </div>
+
           <a
             href="#about-me"
             className="cursor-pointer py-[15px] px-[10px] hover:scale-110  duration-150"
@@ -26,7 +38,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="w-full h-full flex text-lg 2md:text-base flex-row items-center justify-between z-[105] m-auto px-[10px]">
+        <div className="w-full md:hidden h-full flex text-lg 2md:text-base flex-row items-center justify-between z-[105] m-auto px-[10px]">
           <a
             href="#fullscreen"
             className="h-auto hover:scale-110  duration-150  w-auto cursor-pointer flex flex-row items-center"
@@ -54,21 +66,17 @@ const Navbar = () => {
               >
                 Projects
               </a>
-              {isOpen ? (
-                <IoMdClose
-                  size={35}
-                  onClick={() => setIsOpen((prev) => !prev)}
-                  className="cursor-pointer"
-                />
-              ) : (
-                <IoMdMenu
-                  className="cursor-pointer"
-                  onClick={() => setIsOpen((prev) => !prev)}
-                  size={35}
-                />
-              )}
             </div>
           </div>
+        </div>
+        <div className=" hidden md:flex relative top-[15px] justify-end">
+          {!isOpen && (
+            <IoMdMenu
+              className="cursor-pointer "
+              size={35}
+              onClick={() => setIsOpen((prev) => !prev)}
+            />
+          )}
         </div>
       </nav>
     </>
