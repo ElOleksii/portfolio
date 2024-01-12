@@ -9,8 +9,8 @@ export default function MainPage() {
     <>
       <Navbar />
       <FullScreenHeader />
-      <AboutMe />
-      <Skills />
+      {/* <AboutMe />
+      <Skills /> */}
       <Projects />
     </>
   );

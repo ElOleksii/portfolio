@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        btn: "-4px 0px 14px 5px inherit;",
+      },
+    },
     screens: {
       "2xl": { max: "1535px" },
 
