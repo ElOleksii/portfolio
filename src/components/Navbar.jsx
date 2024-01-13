@@ -13,7 +13,7 @@ const Navbar = () => {
           style={{ display: isOpen ? "flex" : "none" }}
           className="fixed text-xl sm:text-md top-0 bg-black bg-opacity-95 right-0 h-screen w-full backdrop-blur-[10px] flex flex-col items-center  justify-start  text-gray-200"
         >
-          <div className="flex my-[15px]   px-[10px] justify-end w-full items-center">
+          <div className="flex my-[15px] px-[15px] justify-end w-full items-center">
             <IoMdClose
               size={35}
               onClick={closeMenu}

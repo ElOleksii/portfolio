@@ -18,3 +18,9 @@ export const projects = [
     stack: "Vue JS",
   },
 ];
+
+Array.prototype.last = function () {
+  console.log(this[this.length - 1]);
+};
+const num = [1, 2, 3];
+console.log(num.last());
