@@ -17,15 +17,7 @@ export default function Projects() {
       </div>
 
       {projects.map((project) => (
-        <ProjectCard
-          key={project.title}
-          title={project.title}
-          description={project.description}
-          img={project.img}
-          demoLink={project.demoLink}
-          githubLink={project.githubLink}
-          stack={project.stack}
-        />
+        <ProjectCard />
       ))}
     </section>
   );
