@@ -17,7 +17,7 @@ export default function Projects() {
       </div>
 
       {projects.map((project) => (
-        <ProjectCard />
+        
       ))}
     </section>
   );
