@@ -12,7 +12,7 @@ export const projects = [
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        color: "text-blue-500",
       },
     ],
   },
@@ -26,7 +26,7 @@ export const projects = [
     tags: [
       {
         name: "vue",
-        color: "green-text-gradient",
+        color: "text-green-500",
       },
     ],
   },

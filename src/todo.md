@@ -1,0 +1,1 @@
+- Remove smoothy scroll on small devices
