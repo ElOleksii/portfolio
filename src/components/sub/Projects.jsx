@@ -1,14 +1,23 @@
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 
 import { staggerContainer } from "../../utils/motion.js";
-import github from "../../public/github.png";
 import { projects } from "../../constants/projects.js";
 import { fadeIn, textVariant } from "../../utils/motion";
+import { FaGithub } from "react-icons/fa";
+import { FiArrowUpRight } from "react-icons/fi";
 
-const ProjectCard = ({ index, title, description, tags, img, githubLink }) => {
+const ProjectCard = ({
+  index,
+  title,
+  description,
+  tags,
+  img,
+  githubLink,
+  demoLink,
+}) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <div className="bg-tertiary  hover:scale-105 transition-all p-5 rounded-2xl sm:w-[360px] w-full">
+      <div className="bg-tertiary 2md:hover:scale-100  hover:scale-105 transition-all p-5 rounded-2xl sm:w-[360px] w-full">
         <div className="relative w-full h-[230px]">
           <img
             src={img}
@@ -17,16 +26,26 @@ const ProjectCard = ({ index, title, description, tags, img, githubLink }) => {
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(githubLink, "_blank")}
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img
-                src={github}
+              <FaGithub
+                fill="black"
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
               />
-            </div>
+            </a>
+            <a
+              href={demoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <FiArrowUpRight style={{ color: "black" }} size={25} />
+            </a>
           </div>
         </div>
 
@@ -45,6 +64,18 @@ const ProjectCard = ({ index, title, description, tags, img, githubLink }) => {
             </p>
           ))}
         </div>
+        {/* <div className="flex justify-around 2md:hover:flex  2md:flex-col 2md:gap-2  2md:items-center relative top-[20px]  ">
+          <a href={demoLink} target="_blank" rel="noopener noreferrer">
+            <button className=" bg-purple-500 flex flex-row-reverse items-center justify-center hover:shadow-btn hover:shadow-purple-500 hover:bg-purple-400   border-none p-3 w-[200px] cursor-pointer ">
+              <FiArrowUpRight className="w-[20px] h-[20px]" /> <span>Demo</span>
+            </button>
+          </a>
+          <a href={githubLink} target="_blank" rel="noopener noreferrer">
+            <button className="bg-orange-500 hover:shadow-btn hover:shadow-orange-500 flex gap-2 flex-row-reverse items-center justify-center hover:bg-orange-400 border-none p-3 w-[200px] cursor-pointer ">
+              <FaGithub className="w-[20px] h-[20px]" /> <span>GitHub</span>
+            </button>
+          </a>
+        </div> */}
       </div>
     </motion.div>
   );
@@ -54,6 +85,7 @@ const Works = () => {
   return (
     <>
       <motion.section
+        id="projects"
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
@@ -65,7 +97,7 @@ const Works = () => {
             <h2
               className={`text-white  font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]`}
             >
-              Projects.
+              Projects
             </h2>
           </motion.div>
 

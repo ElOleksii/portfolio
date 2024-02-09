@@ -53,19 +53,19 @@ const Navbar = () => {
           </a>
 
           <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-            <div className="flex items-center justify-between w-full h-auto    mr-[15px] px-[20px] py-[10px] text-gray-200">
+            <div className="flex items-center justify-evenly w-full h-auto    mr-[15px] px-[20px] py-[10px] text-gray-200">
               <a
                 href="#about-me"
                 className="cursor-pointer hover:scale-110  duration-150"
               >
                 About me
               </a>
-              <a
+              {/* <a
                 href="#skills"
                 className="cursor-pointer hover:scale-110  duration-150"
               >
                 Skills
-              </a>
+              </a> */}
               <a
                 href="#projects"
                 className="cursor-pointer hover:scale-110 duration-150"

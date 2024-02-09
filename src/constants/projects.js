@@ -8,7 +8,7 @@ export const projects = [
       "This site allows you to add cryptocurrency and monitor its price.",
     img: currencyTracker,
     demoLink: "https://eloleksiy.github.io/currency-tracker/",
-    githubLink: "https://github.com/ElOleksiy/currency-tracker, Tailwind",
+    githubLink: "https://github.com/ElOleksiy/currency-tracker",
     tags: [
       {
         name: "react",
