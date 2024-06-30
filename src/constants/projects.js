@@ -7,7 +7,7 @@ export const projects = [
     description:
       "This site allows you to add cryptocurrency and monitor its price.",
     img: currencyTracker,
-    demoLink: "https://eloleksiy.github.io/currency-tracker/",
+    demoLink: "https://eloleksii.github.io/currency-tracker/",
     githubLink: "https://github.com/ElOleksii/currency-tracker",
     tags: [
       {
@@ -21,8 +21,8 @@ export const projects = [
     description:
       "Turn-based game, the main goal of which is to fight a monster.",
     img: monsterSlayerGame,
-    demoLink: "https://github.com/ElOleksii/vue-game",
-    githubLink: "",
+    demoLink: "",
+    githubLink: "https://github.com/ElOleksii/vue-game",
     tags: [
       {
         name: "vue",
