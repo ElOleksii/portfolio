@@ -1,5 +1,4 @@
 import currencyTracker from "../public/currency.png";
-import monsterSlayerGame from "../public/monsterSlayerGame.png";
 import fitnessWorkout from "../public/fitness-workout.png";
 
 export const projects = [
@@ -18,20 +17,6 @@ export const projects = [
     ],
   },
   {
-    title: "Monsterr Slayer Game",
-    description:
-      "Turn-based game, the main goal of which is to fight a monster.",
-    img: monsterSlayerGame,
-    demoLink: "https://eloleksii.github.io/vue-game",
-    githubLink: "https://github.com/ElOleksii/vue-game",
-    tags: [
-      {
-        name: "vue",
-        color: "text-green-500",
-      },
-    ],
-  },
-  {
     title: "Fitness Workout Landing",
     description: "This is simple landing example about Fitness Workout",
     img: fitnessWorkout,
@@ -39,7 +24,7 @@ export const projects = [
     githubLink: "https://github.com/ElOleksii/fitness-site",
     tags: [
       {
-        name: "scss",
+        name: "scss, parcel",
         color: "text-pink-500",
       },
     ],
