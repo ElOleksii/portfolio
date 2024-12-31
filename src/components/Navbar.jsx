@@ -21,7 +21,7 @@ const Navbar = () => {
             />
           </div>
 
-          <a
+          {/* <a
             href="#about-me"
             onClick={closeMenu}
             className="cursor-pointer py-[15px] px-[10px] hover:scale-110  duration-150"
@@ -34,7 +34,7 @@ const Navbar = () => {
             className="cursor-pointer py-[15px] px-[10px] hover:scale-110  duration-150"
           >
             Skills
-          </a>
+          </a> */}
           <a
             href="#projects"
             onClick={closeMenu}
@@ -52,14 +52,14 @@ const Navbar = () => {
             <span className=" ml-[10px]  md:block">Oleksii Telenchak</span>
           </a>
 
-          <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-            <div className="flex items-center justify-evenly w-full h-auto    mr-[15px] px-[20px] py-[10px] text-gray-200">
-              <a
+          <div className=" h-full flex flex-row items-center justify-between md:mr-20">
+            <div className="flex gap-5 items-center justify-evenly w-full h-auto    mr-[15px] px-[20px] py-[10px] text-gray-200">
+              {/* <a
                 href="#about-me"
                 className="cursor-pointer hover:scale-110  duration-150"
               >
                 About me
-              </a>
+              </a> */}
               {/* <a
                 href="#skills"
                 className="cursor-pointer hover:scale-110  duration-150"

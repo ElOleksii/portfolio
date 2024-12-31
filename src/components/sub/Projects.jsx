@@ -16,15 +16,17 @@ const ProjectCard = ({
   demoLink,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <div className="bg-tertiary 2md:hover:scale-100  hover:scale-105 transition-all p-5 rounded-2xl sm:w-[360px] w-full">
-        <div className="relative w-full h-[230px]">
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      className="max-w-[480px] mx-auto"
+    >
+      <div className="bg-tertiary transition-all rounded-2xl">
+        <div className="relative h-[230px]">
           <img
             src={img}
             alt="project_image"
-            className="w-full max-w-[480px]  h-full object-cover rounded-2xl"
+            className="w-full h-full object-cover rounded-2xl"
           />
-
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <a
               href={githubLink}
@@ -64,18 +66,6 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-        {/* <div className="flex justify-around 2md:hover:flex  2md:flex-col 2md:gap-2  2md:items-center relative top-[20px]  ">
-          <a href={demoLink} target="_blank" rel="noopener noreferrer">
-            <button className=" bg-purple-500 flex flex-row-reverse items-center justify-center hover:shadow-btn hover:shadow-purple-500 hover:bg-purple-400   border-none p-3 w-[200px] cursor-pointer ">
-              <FiArrowUpRight className="w-[20px] h-[20px]" /> <span>Demo</span>
-            </button>
-          </a>
-          <a href={githubLink} target="_blank" rel="noopener noreferrer">
-            <button className="bg-orange-500 hover:shadow-btn hover:shadow-orange-500 flex gap-2 flex-row-reverse items-center justify-center hover:bg-orange-400 border-none p-3 w-[200px] cursor-pointer ">
-              <FaGithub className="w-[20px] h-[20px]" /> <span>GitHub</span>
-            </button>
-          </a>
-        </div> */}
       </div>
     </motion.div>
   );
@@ -90,7 +80,7 @@ const Works = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className={`sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto top-[150px] relative z-0`}
+        className={`sm:px-5  px-6 sm:py-16 py-10 max-w-7xl mx-auto top-[150px] relative z-0`}
       >
         <div className="relative top-[20px]">
           <motion.div variants={textVariant()}>
